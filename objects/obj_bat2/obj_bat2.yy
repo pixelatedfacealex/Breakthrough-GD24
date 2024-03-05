@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_bat",
+  "name": "obj_bat2",
   "spriteId": {
-    "name": "spr_bat",
-    "path": "sprites/spr_bat/spr_bat.yy",
+    "name": "spr_bat2",
+    "path": "sprites/spr_bat2/spr_bat2.yy",
   },
   "solid": false,
   "visible": true,
@@ -23,16 +23,11 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [
-    {"x":0.0,"y":0.0,},
-    {"x":128.0,"y":0.0,},
-    {"x":128.0,"y":21.0,},
-    {"x":0.0,"y":21.0,},
-  ],
+  "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":37,"eventType":5,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":39,"eventType":5,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
