@@ -1,3 +1,3 @@
 if(!go){
-	x = obj_bat.x;
+	x = obj_bat2.x;
 }
