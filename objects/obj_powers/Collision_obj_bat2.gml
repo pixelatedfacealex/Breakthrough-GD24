@@ -1,3 +1,5 @@
+audio_play_sound(snd_PowerUp, 0, false);
+
 if(image_index == 0){
 	with(obj_bat2){
 		image_xscale = 1.5;
