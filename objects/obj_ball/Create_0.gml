@@ -1,1 +1,2 @@
 go = false;
+gameover = false;
