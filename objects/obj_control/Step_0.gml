@@ -1,12 +1,18 @@
-if(instance_number(obj_brick) <=0){
-	room_restart();
-}
-
-if(gameover){
-	if(keyboard_check_pressed(vk_anykey)){
-		room_restart();
-		global.player_score = 0;
-		global.player_lives = 3;
-			audio_play_sound(snd_Click, 0, false);
-	}
-}
+/// @description Check Room Restart
+if instance_number(obj_brick) <= 0
+    {
+    room_restart();
+    }
+else
+    {
+    if state == "GAMEOVER"
+        {
+        if keyboard_check(vk_anykey)
+            {
+            audio_play_sound(snd_Click, 0, false);
+            global.player_score = 0;
+            global.player_lives = 3;
+            room_restart();
+            }
+        }
+    }

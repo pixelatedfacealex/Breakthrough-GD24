@@ -1,3 +1,5 @@
-if(irandom(2) == 00){
-	instance_create_layer(x,y,"Instances",obj_powers);
-}
+/// @description Create Powerup
+if irandom(2) == 0
+    {
+    instance_create_layer(x, y, layer, obj_powers);
+    }

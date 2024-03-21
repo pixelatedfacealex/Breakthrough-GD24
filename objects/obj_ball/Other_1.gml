@@ -19,11 +19,26 @@ else
     if bbox_bottom > room_height
         {
         // The ball is leaving the room, so create a new one and destroy this one
-        instance_create_layer(xstart, ystart, layer, obj_ball);
-        instance_destroy();
+	global.player_lives -= 1;
+	if global.player_lives <= 0	  
+	  {
+    if global.player_score > global.high_score
+        {
+        global.high_score = global.player_score;
         }
-    }
+    with (obj_control)
+        {
+        state ="GAMEOVER"
+        }
+	  }
+	else
+		{
+	    instance_create_layer(xstart, ystart, layer, obj_ball);
+		}
+		instance_destroy();
+	}
 // With each bounce, increase the ball speed up to a maximum of 12px per step
 if speed < 12 speed += 0.1;
 audio_play_sound(snd_Bounce, 0, false);
 direction += 2 - random(4);
+	}
